@@ -1,9 +1,13 @@
 
 import styles from './HeroImage.module.css'
+import next from 'next'
+import Image from next
+
+
 const HeroImage = () => {
     return (
-        <img
-        src="/images/hero-desktop.png"
+        <Image
+        src="public\images\hero-desktop.png"
         alt="Cozy living room with a fireplace"
         className={styles.heroImage}
       />

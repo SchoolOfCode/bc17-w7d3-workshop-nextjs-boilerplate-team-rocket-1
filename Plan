@@ -21,7 +21,7 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 - create components folder ✅
 
 - transfer component by component to make sure everything works (head and footer) ✅
-- uncomment out component in layout ✅
+  - uncomment out component in layout ✅
   - copy component folder to repo ✅
   - check it loads ✅
 
@@ -30,4 +30,24 @@ in your home page component, "/app/page.js", you could put the rest of the home 
   - copy component folder to repo✅
   - check it loads✅
 
--IMAGE STUFF  
+# Image stuff 
+- copy over image folder to the "/public" folder ✅
+- For each image:
+ - import Image from next ✅
+ - check import path✅
+ - change <img> to <Image> component✅
+ - check it loads
+
+# step 3
+- create a new folder "/app/founders"
+- inside create a file called "page.js"
+- create a super simple component that just returns "<h1>Founders</h1>"
+- check it works
+- import Link from Next
+- add a Next.js "<Link href="/founders"></Link>" component somewhere on your home page
+- check it loads
+- (Come back and complete the founders page later)
+
+# step 4 
+
+
