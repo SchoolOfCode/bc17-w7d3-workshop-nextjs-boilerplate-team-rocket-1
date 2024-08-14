@@ -20,16 +20,14 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 
 - create components folder ✅
 
-- transfer component by component to make sure everything works (head and footer)
+- transfer component by component to make sure everything works (head and footer) ✅
+- uncomment out component in layout ✅
+  - copy component folder to repo ✅
+  - check it loads ✅
 
-- uncomment out component in layout
+- transfer component by component to make sure everything works (in main)✅
+  - add component to page.js✅
+  - copy component folder to repo✅
+  - check it loads✅
 
-  - copy component folder to repo
-  - check it loads
-
-- transfer component by component to make sure everything works (in main)
-  - add component to page.js
-  - copy component folder to repo
-  - check it loads
-
--IMAGE STUFF
+-IMAGE STUFF  
