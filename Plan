@@ -13,3 +13,22 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 "global" css (stuff to style the body or wrapper etc) can go in "/app/global.css". ✅
 
 - replace "Inter" with "Aleo" in "/app/layout.js"
+
+# step 2
+
+-  make a new folder at the top of the project called "/src"
+
+- create components folder
+
+- transfer component by component to make sure everything works (head and footer)
+- uncomment out component in layout
+  - copy component folder to repo
+  - check it loads
+
+- transfer component by component to make sure everything works (in main)
+  - add component to page.js
+  - copy component folder to repo
+  - check it loads
+
+-IMAGE STUFF
+
