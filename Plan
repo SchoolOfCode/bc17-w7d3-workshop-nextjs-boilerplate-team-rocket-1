@@ -1,0 +1,15 @@
+# step one
+
+delete the css in "/app/page.css ✅
+
+make the component in "/app/page.js" just return the words "home page" ✅
+
+Check the page still loads ✅
+
+move move across the top level of you application, Header, Main and Footer components in "/app/layout.js" file ✅
+
+in your home page component, "/app/page.js", you could put the rest of the home page (main and everything in it). ✅
+
+"global" css (stuff to style the body or wrapper etc) can go in "/app/global.css". ✅
+
+- replace "Inter" with "Aleo" in "/app/layout.js"
