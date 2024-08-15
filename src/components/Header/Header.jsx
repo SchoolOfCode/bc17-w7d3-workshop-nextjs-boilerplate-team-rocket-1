@@ -10,9 +10,6 @@ const Header = () => {
 
   function handleClick() {
     setMenuStatus(!menuStatus);
-
-
-
     // console.log(menuStatus);
   }
 
@@ -21,7 +18,7 @@ const Header = () => {
       <header className={styles.headerContainer}>
         <h1 className={styles.title}>🔥 Fireplace Palace</h1>
         <button onClick={handleClick}>Racoon menu</button>
-      
+        <Menu> </Menu>
       </header>
     </>
   );
