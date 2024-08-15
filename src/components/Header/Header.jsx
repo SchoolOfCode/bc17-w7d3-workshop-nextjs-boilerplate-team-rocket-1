@@ -34,7 +34,9 @@ const Header = () => {
   return (
     <>
       <header className={styles.headerContainer}>
-        <h1 className={styles.title}>🔥 Fireplace Palace</h1>
+        <Link href="/">
+          <h1 className={styles.title}>🔥 Fireplace Palace</h1>
+        </Link>
         <button onClick={handleClick} className={styles.menuHamburgerButton}>
           ≡
         </button>
