@@ -43,13 +43,20 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 
 # step 3
 
-- create a new folder "/app/founders"
-- inside create a file called "page.js"
-- create a super simple component that just returns "<h1>Founders</h1>"
-- check it works
+- create a new folder "/app/founders" ✅
+- inside create a file called "page.js" ✅
+- create a super simple component that just returns "<h1>Founders</h1>" ✅
+- check it works ✅
 - import Link from Next
-- add a Next.js "<Link href="/founders"></Link>" component somewhere on your home page
-- check it loads
-- (Come back and complete the founders page later)
+  - add a Next.js "<Link href="/founders"></Link>" component somewhere on your home page ✅
+- check it loads ✅
+- (Come back and complete the founders page later) ✅
 
 # step 4
+
+-  import { useState } from 'react'
+-  create a variable and function for useState 
+-  add a button to your header in layout.js 
+- create a function that changes the useState upon every click 
+
+
