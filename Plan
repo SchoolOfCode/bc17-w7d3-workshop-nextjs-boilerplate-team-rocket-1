@@ -65,6 +65,10 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 # step 4 - stretch
 
 - create a menu React component (a big ol' orange div that displays fullscreen)
-- show/hide that div according to the menuStatus state in our button event handler
 - Add founders page link to the new menu
 - Add a close button to the menu to hide the menu
+- Add the Menu component inside the header 
+- show/hide that div according to the menuStatus state in our button event handler
+- add a display property in the menu component with a value of hide 
+- go to the header's component, and inside the event handler create a condition statement for if the useState variable is set to True. 
+
