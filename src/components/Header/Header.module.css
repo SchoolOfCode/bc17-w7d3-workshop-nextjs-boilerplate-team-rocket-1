@@ -24,12 +24,32 @@
 .menu {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   background-color: orange;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   top: 0;
   left: 0;
+  padding-top: 1.5rem;
+}
+
+.menuCloseButton {
+  background-color: unset;
+  border: none;
+  font-weight: 500;
+  font-size: 3.8rem;
+  margin-right: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.menu a {
+  margin: 1rem 2.1rem 1rem 0;
+  font-size: 2.5rem;
+}
+
+.menu a:hover {
+  text-decoration: underline;
 }
 
 /*

@@ -14,7 +14,9 @@ const Header = () => {
     return (
       <>
         <div className={styles.menu}>
-          <button onClick={handleClick}>X (Close Menu)</button>
+          <button onClick={handleClick} className={styles.menuCloseButton}>
+            X
+          </button>
           <Link onClick={handleClick} href="/">
             Home
           </Link>
