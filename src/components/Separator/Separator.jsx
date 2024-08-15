@@ -1,8 +1,6 @@
-import styles from './Separator.module.css'
+import styles from "./Separator.module.css";
 const Separator = () => {
-    return (
-        <hr class={styles.separator} />
-    )
-}
+  return <hr className={styles.separator} />;
+};
 
-export default Separator
+export default Separator;
