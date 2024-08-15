@@ -11,17 +11,9 @@ export default function founders() {
         width={187}
         height={333}
       />
-      <ul>
-        <li>
-          <h2>(Ling) Eva</h2>
-        </li>
-        <li>
-          <h2>Hamsa</h2>
-        </li>
-        <li>
-          <h2>Pieter</h2>
-        </li>
-      </ul>
+      <h2>(Ling) Eva</h2>
+      <h2>Hamsa</h2>
+      <h2>Pieter</h2>
     </div>
   );
 }
