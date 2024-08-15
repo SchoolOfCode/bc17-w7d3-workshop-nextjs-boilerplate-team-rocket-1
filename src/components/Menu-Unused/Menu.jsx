@@ -1,6 +1,5 @@
+import styles from "./Menu.module.css";
 import Link from "next/link";
-
-
 
 export default function Menu() {
   return (
@@ -11,22 +10,5 @@ export default function Menu() {
         <Link href="/founders">Founders</Link>
       </div>
     </>
-  )
-
+  );
 }
-
-
-
-// div
-  // the founders link 
-  // the home page link
-  // close button
-// div
-
-
-
-
-
-
-
-

@@ -1,13 +1,36 @@
 .headerContainer {
-    padding-left: 10px;
-    font-size: 16px;
-  }
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  font-size: 16px;
+}
 
-  .title{
-    margin: 0;
+.title {
+  margin: 10px 0 0;
+}
+
+.menuHamburgerButton {
+  background-color: unset;
+  border: none;
+  font-size: 6rem;
+  line-height: 3rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: orange;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+/*
+@media (min-width: 1024px) {
+  .headerContainer {
+    width: 70%;
   }
-  @media (min-width: 1024px) {
-    .headerContainer {
-      width: 70%;
-    }
-  }
+}
+*/

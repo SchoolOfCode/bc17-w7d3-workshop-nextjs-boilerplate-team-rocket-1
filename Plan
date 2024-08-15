@@ -62,14 +62,15 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 - add 'use client' to top of page ✅
 - check loads ✅
 
-# step 4 - stretch
+# step 4 - interactive menu
+
 - Add founders page and home page link to the new menu✅
 - Add a close button to the menu to hide the menu ✅
 - Add the Menu component inside the header ✅
-- render menu componant according to the menuStatus state in our button event handler
-- go to the header's component, create a condition statement for if the useState variable is set to True
+- render menu component according to the menuStatus state in our button event handler ✅
+- go to the header's component, create a condition statement for if the useState variable is set to True ✅
 
-- close button functionality
- - link to open menu button logic
+- close button functionality ✅
+- link to open menu button logic ✅
 
-- create a menu React component (a big ol' orange div that displays fullscreen)
+- create a menu React component (a big ol' orange div that displays fullscreen) - we did this in the Header since we were not sure how to get the close button to work if the menu was in its own React component ✅
