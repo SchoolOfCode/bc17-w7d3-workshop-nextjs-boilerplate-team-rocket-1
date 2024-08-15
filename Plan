@@ -53,10 +53,13 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 - (Come back and complete the founders page later) ✅
 
 # step 4
+-  add a button to your header in layout.js ✅
+- add event listener and event handler to button ✅
+- create a function that changes the useState upon every click ✅
+-  import { useState } from 'react' ✅
+-  create a variable and function for useState ✅
+- add 'use client' to top of page
+- check loads
 
--  import { useState } from 'react'
--  create a variable and function for useState 
--  add a button to your header in layout.js 
-- create a function that changes the useState upon every click 
 
 
