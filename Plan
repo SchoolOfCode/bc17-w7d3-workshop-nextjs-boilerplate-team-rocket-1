@@ -74,3 +74,51 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 - link to open menu button logic ✅
 
 - create a menu React component (a big ol' orange div that displays fullscreen) - we did this in the Header since we were not sure how to get the close button to work if the menu was in its own React component ✅
+
+# step 5 
+- add images to folder
+
+- import useeffect, usestate
+
+- create componant Reviews()
+
+- write return for Reviews(): 
+render three buttons with :
+- event listeners 
+- to fat arrows 
+- changes selectCountry
+- to country names England, Scotland, Wales
+
+- create function: selectCountry(name)
+
+ - define state variables: selectedCountry, setSelectedCountry, usestate as null
+ - define state variables:  reviwData, setRiewviwData, usestate as null
+
+- create function: setSelectedCountry(name)
+
+- call use effect with fat arrow function 
+ - write if (selectedCountry)
+ - fetch from api
+  - parse json responce
+  - use responce to change reviewdata
+
+- dependcency thingy: [selectedCountry]
+
+# step 6 
+- displayinng reviws
+
+# step 7 change button componant
+
+# Presentaion 
+
+- intros
+- describe task
+- code demo
+- planning
+- decicions and problems with coloutions and reasioning
+
+- slides
+- run through 2
+- tiny script
+
+
