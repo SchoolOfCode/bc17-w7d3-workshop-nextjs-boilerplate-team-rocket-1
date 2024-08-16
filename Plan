@@ -97,15 +97,16 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 - define state variables: selectedCountry, setSelectedCountry, useState as null ✅
 - Use setSelectedCountry setter function to set the selectedCountry state ✅
 
-- define state variables: reviewData, setReviewData, useState as null
+- define state variables: reviewData, setReviewData, useState as null ✅
 
-- call use effect with fat arrow function
-- write if (selectedCountry)
-- fetch from api
-- parse json responce
-- use responce to change reviewdata
+- call use effect with fat arrow function ✅
+- write if (selectedCountry) ✅
+- fetch from api✅
+  - have the url in back ticks and insert the selected country as a variable ✅
+- parse json responce ✅
+- use responce to change reviewdata ✅
 
-- dependcency thingy: [selectedCountry]
+- dependcency thingy: [selectedCountry] ✅
 
 # step 6
 
