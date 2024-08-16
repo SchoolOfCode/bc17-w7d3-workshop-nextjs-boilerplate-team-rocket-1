@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.reviewArticle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.reviewArticle button {
+  margin: 5px;
+}

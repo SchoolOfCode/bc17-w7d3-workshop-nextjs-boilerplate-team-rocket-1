@@ -1,10 +1,7 @@
-
-@media (min-width: 1024px){
-    .separator {
-        width: 70%;
-        height: 2px;
-        background-color: lightgray;
-        border: none;
-        margin-top: 40px;
-      }
+.separator {
+  width: 97%;
+  height: 2px;
+  background-color: lightgray;
+  border: none;
+  margin-top: 40px;
 }

@@ -109,19 +109,19 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 - dependcency thingy: [selectedCountry] ✅
 
 # step 6
+
 - create some html in Reviews.jsx to display the reviews
 - article ✅
- - h3 Trusted ✅
- - h4 blablablab✅
- - buttons goes here ✅
- - p reviewData.text
-  - give class and hand props for css 
-  - css grey background
-  - css boarder radius 
-- p reviewer's name - reviewData.author
- - location - reviewData.location
-
- - create depencency for reviw render upon 
+- h3 Trusted ✅
+- h4 blablablab✅
+- buttons goes here ✅
+- p reviewData.text ✅
+- give class and hand props for css
+- css grey background
+- css boarder radius
+- Conditional render for: ✅
+  - p reviewer's name - reviewData.author ✅
+  - location - reviewData.location ✅
 
 # step 7 change button componant
 
