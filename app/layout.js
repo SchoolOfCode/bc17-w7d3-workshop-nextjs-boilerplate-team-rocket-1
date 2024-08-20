@@ -10,7 +10,7 @@ export const metadata = {
   description: "Discover the perfect fireplace",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({children}) {
   return (
     <html lang="en">
       <body className={aleo.className}>

@@ -41,6 +41,7 @@ const Header = () => {
         </Link>
         <button onClick={handleClick} className={styles.menuHamburgerButton}>
           ≡
+          {console.log('HELLO')}
         </button>
         {menuStatus && menu()}
       </header>

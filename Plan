@@ -144,17 +144,19 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 - add test element to design-booking page and check that it works ✅
 
 - create "ContactForm" component ✅
-  - use two fieldset groups
-  - use style as prop in form component
-- look through design reference for fields
-- "request design consultation" submit button
+  - use two fieldset groups ✅
+- look through design reference for fields ✅
+- "request design consultation" submit button ✅
+
+
+
 
 ## add useState
 
-- create a piece of state for one of the input fields: "const [ firstName, setFirstName ] = useState("");
-- create a function called handleFirstNameChange and connect it to the input's onChange: "onChange={(event) => handleFirstNameChange(event)}"
-  - read the updated value of the input field from the event being passed to the function. Save the updated value back into the firstName state
-- link the input field's value attribute (first name field) to read from that state
+- create a piece of state for one of the input fields: "const [ firstName, setFirstName ] = useState(""); ✅
+- create a function called handleFirstNameChange and connect it to the input's onChange: "onChange={(event) => handleFirstNameChange(event)}" ✅
+  - read the updated value of the input field from the event being passed to the function. Save the updated value back into the firstName state ✅
+- link the input field's value attribute (first name field) to read from that state ✅
 
 - REPEAT!
 - use the same on change handler function for each field's onChange event
@@ -166,5 +168,6 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 - show error messege
 
 ## refactor
+- use style as prop in form component
 
 - split Form componant into differnt componants

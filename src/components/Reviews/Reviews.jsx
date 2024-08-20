@@ -31,12 +31,12 @@ export default function Reviews() {
           We've got thousands of happy customers all over the Uk. Choose your
           country to see the latest review
         </h3>
-        <button onClick={() => selectCountry("England")}>England</button>
-        <button onClick={() => selectCountry("Wales")}>Wales</button>
-        <button onClick={() => selectCountry("Scotland")}>Scotland</button>
+        <button className={styles.bbb} onClick={() => selectCountry("England")}>England</button>
+        <button className={styles.bbb} onClick={() => selectCountry("Wales")}>Wales</button>
+        <button className={styles.bbb} onClick={() => selectCountry("Scotland")}>Scotland</button>
         <h4>{reviewData && reviewData.text}</h4>
         <p>
-          {reviewData && reviewData.author} {reviewData && reviewData.location}
+          {reviewData && reviewData.author} {reviewData && ('  -')+ reviewData.location}
         </p>
       </article>
     </div>

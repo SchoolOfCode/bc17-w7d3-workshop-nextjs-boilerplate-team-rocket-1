@@ -1,6 +1,8 @@
 .wrapper {
   display: flex;
   justify-content: center;
+  background: rgb(255, 158, 74);
+  margin: 30px 0 30px 0
 }
 
 .reviewArticle {
@@ -12,4 +14,11 @@
 
 .reviewArticle button {
   margin: 5px;
+}
+
+.bbb{
+    /* border:0; */
+    height: 30px;
+    background: rgb(255, 164, 52);
+    width:135px;
 }
