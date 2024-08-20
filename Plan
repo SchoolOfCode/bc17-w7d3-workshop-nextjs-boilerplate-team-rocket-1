@@ -148,7 +148,6 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 - look through design reference for fields ✅
 - "request design consultation" submit button ✅
 
-
 ## add useState
 
 - create a piece of state for one of the input fields: "const [ firstName, setFirstName ] = useState(""); ✅
@@ -159,13 +158,14 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 - REPEAT! ✅
 - use the same on change handler function for each field's onChange event ✅
 
-- console.log submitted data via button: onSubmit
-  - call a submit handler function
-  - prevent the default behaviour
+- console.log submitted data via button: onSubmit ✅
+  - call a submit handler function ✅
+  - prevent the default behaviour ✅
   - validation to check if feilds are empty
 - show error messege
 
 ## refactor
+
 - use style as prop in form component
 
 - split Form componant into differnt componants
