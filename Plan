@@ -172,3 +172,28 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 - use style as prop in form component 
 
 - split Form componant into differnt componants ✅
+
+# Reducer task
+
+- make a copy of ContactForm.jsx
+
+- Remove all feilds apart from one
+  -the stage
+  -handler function 
+  -html
+
+- check!
+
+- create state object that mimicks what we have
+- create a reducer
+- connect reducer and state object to useReducer
+
+- check!
+
+- Remove old logic
+  -remove fullName state
+  -remove setFullName state
+  
+- Replace with state.data.fullName
+
+- check!
