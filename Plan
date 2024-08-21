@@ -206,4 +206,13 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 
 - check! ✅
 
+- Add remaining inputs back in
+
+  - Add new object keys to initialState
+  - Add JSX for the form components that were deleted
+  - Fix the validation to check all keys in the new reducer state
+  - Console log the data in the new reducer state
+
+- check!
+
 # Reducer extended tasks
