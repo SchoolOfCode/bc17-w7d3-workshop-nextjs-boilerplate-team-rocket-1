@@ -6,6 +6,12 @@ import styles from "./ContactForm.module.css";
 const initialState = {
   data: {
     firstName: "",
+    postcode:"",
+    address:"",
+    city:"",
+    phoneNumber:"",
+    email: ""
+
   },
   error: false,
 };
@@ -42,7 +48,7 @@ export default function ContactForm() {
   function handleSubmit(event) {
     event.preventDefault(); // Prevent form default behaviour (posting to itself/refreshing the page)
 
-    if (!state.data.firstName) {
+    if (!state.data.firstName || !state.data.postcode ||!state.data.address || !state.data.city|| !state.data.phoneNumber || !state.data.email  ) {
       setError(true);
       return;
     }
@@ -53,13 +59,17 @@ export default function ContactForm() {
 
     console.log(
       `Name: ${state.data.firstName}
-    `
+      Postcode: ${state.data.postcode}
+      Address: ${state.data.address}
+      City: ${state.data.city}
+      phoneNumber: ${state.data.phoneNumber}
+      Email: ${state.data.email}`
+      
     );
-    //  Postcode: ${postcode}
-    //   Address: ${address}
-    //   City: ${city}
-    //   Phone number: ${phoneNumber}
-    //   Email: ${email}`
+    
+   
+    
+    
   }
 
   return (
@@ -79,10 +89,72 @@ export default function ContactForm() {
               onChange={(event) => handleChange(event)}
             />
           </label>
+
+          <label>
+            Postcode:
+            <input
+              className={styles.inputBox}
+              type="text"
+              value={state.data.postcode}
+              name="postcode"
+              onChange={(event) => handleChange(event)}
+            />
+          </label>
+
+          <label>
+            Address:
+            <input
+              className={styles.inputBox}
+              type="text"
+              value={state.data.address}
+              name="address"
+              onChange={(event) => handleChange(event)}
+            />
+          </label>
+
+          <label>
+            City:
+            <input
+              className={styles.inputBox}
+              type="text"
+              value={state.data.city}
+              name="city"
+              onChange={(event) => handleChange(event)}
+            />
+          </label>
+
+
+
+
         </fieldset>
 
         <fieldset className={styles.bottomFieldset}>
+          
           <legend>Contact Information</legend>
+
+          <label>
+              Phone Number:
+              <input
+                className={styles.inputBox}
+                type="tel"
+                value={state.data.phoneNumber}
+                name="phoneNumber"
+                onChange={(event) => handleChange(event)}
+              />
+            </label>
+
+            
+          <label>
+              Email Address:
+              <input
+                className={styles.inputBox}
+                type="email"
+                value={state.data.email}
+                name="email"
+                onChange={(event) => handleChange(event)}
+              />
+            </label>
+
         </fieldset>
 
         <button type="submit" className={styles.button}>
