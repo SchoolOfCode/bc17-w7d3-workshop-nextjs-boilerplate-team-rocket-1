@@ -10,6 +10,7 @@ export default function ContactForm() {
   const [city, setCity] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
+  const [error, setError] = useState(false)
 
   function handleChange(event) {
     if (event.target.name === "name") {
@@ -34,6 +35,14 @@ export default function ContactForm() {
 
   function handleSubmit(event) {
     event.preventDefault(); // Prevent form default behaviour (posting to itself/refreshing the page)
+
+    if (!firstName || !postcode || !address || !city || !phoneNumber || !email){
+      setError(true)
+      return
+    } if (error) {
+      setError(false)
+      return
+    }
 
     console.log(
       `Name: ${firstName}
@@ -117,8 +126,7 @@ export default function ContactForm() {
           </label>
         </fieldset>
 
-        <button type="submit">Book!</button>
-        {(firstName==='' || postcode==='' || address==='' || city==='' ||phoneNumber==='' || email==='' )&& <p>Fil in the form please!</p> }
+        <button type="submit">Book!</button><p>Fill in the form please!</p>
       </form>
     </>
   );
