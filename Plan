@@ -198,10 +198,14 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 
 - check!  ✅
 
-- Code the dispatcher
+- Code the dispatcher ✅
 
-  - Dispatch and action to the reducer
-  - Make the reducer able to do that action
+  - Dispatch and action to the reducer ✅
+  - Make the reducer able to do that action ✅
+  - create new resonce object with spread ✅
 
 - check!
+
+
+
 # Reducer extended tasks

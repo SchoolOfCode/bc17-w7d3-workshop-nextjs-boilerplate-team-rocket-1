@@ -7,7 +7,7 @@ import styles from "./ContactForm.module.css";
 
 const initialState= {
   data:{
-    fullName: '',
+    firstName: '',
 
   },
   error: false
@@ -15,9 +15,16 @@ const initialState= {
 
 function rocketReducer(state, action) {
   switch(action.type) {
-  default:
+    case "CHANGE_FIELD":
+      return {
+        data: {
+          ...state.data,
+          [action.payload.fieldName]: action.payload.fieldValue
+        }, 
+      }
+    default:
     return state 
-  }
+    }
 }
 
 
@@ -32,16 +39,21 @@ export default function ContactForm() {
 
   function handleChange(event) {
     if (event.target.name === "name") {
-      setFirstName(event.target.value);
+      dispatch({
+        type: "CHANGE_FIELD",
+        payload: {
+          fieldName: event.target.name, 
+          fieldValue: event.target.value
+        }
+      })
     }
+
   }
 
   function handleSubmit(event) {
     event.preventDefault(); // Prevent form default behaviour (posting to itself/refreshing the page)
 
-    if (
-      !firstName
-    ) {
+    if (!firstName) {
       setError(true);
       return;
     }
@@ -72,7 +84,7 @@ export default function ContactForm() {
             <input
               className={styles.inputBox}
               type="text"
-              value={state.data.fullName} 
+              value={state.data.firstName} 
               name="name"
               onChange={(event) => handleChange(event)}
             />
