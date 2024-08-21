@@ -175,27 +175,28 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 
 # Reducer initial refactoring task
 
-- make a copy of ContactForm.jsx
+- make a copy of ContactForm.jsx ✅
 
-- Remove all feilds apart from one
-  -the stage
-  -handler function
-  -html
+- Remove all fields apart from one ✅
+  -the state ✅
+  -handler function ✅
+  -html ✅
+ 
+- check! ✅
 
-- check!
+- create state object that mimics what we have ✅
+- create a reducer ✅
+- import useReducer ✅
+- connect reducer and state object to useReducer ✅
 
-- create state object that mimicks what we have
-- create a reducer
-- connect reducer and state object to useReducer
+- check! ✅
 
-- check!
+- Remove old logic 
+  -remove fullName state ✅
+  -remove setFullName state ✅
+- Replace with state.data.fullName ✅
 
-- Remove old logic
-  -remove fullName state
-  -remove setFullName state
-- Replace with state.data.fullName
-
-- check!
+- check!  ✅
 
 - Code the dispatcher
 
@@ -203,5 +204,4 @@ in your home page component, "/app/page.js", you could put the rest of the home 
   - Make the reducer able to do that action
 
 - check!
-
 # Reducer extended tasks
