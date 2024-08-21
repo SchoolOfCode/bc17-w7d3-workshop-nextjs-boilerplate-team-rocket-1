@@ -159,9 +159,9 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 - use the same on change handler function for each field's onChange event ✅
 
 - console.log submitted data via button: onSubmit ✅
+
   - call a submit handler function ✅
   - prevent the default behaviour ✅
-
 
 - validation to check if feilds are empty
   - conditional rendering: if any of the state variables, show error message
@@ -169,17 +169,17 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 
 ## refactor
 
-- use style as prop in form component 
+- use style as prop in form component
 
 - split Form componant into differnt componants ✅
 
-# Reducer task
+# Reducer initial refactoring task
 
 - make a copy of ContactForm.jsx
 
 - Remove all feilds apart from one
   -the stage
-  -handler function 
+  -handler function
   -html
 
 - check!
@@ -193,7 +193,15 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 - Remove old logic
   -remove fullName state
   -remove setFullName state
-  
 - Replace with state.data.fullName
 
 - check!
+
+- Code the dispatcher
+
+  - Dispatch and action to the reducer
+  - Make the reducer able to do that action
+
+- check!
+
+# Reducer extended tasks
