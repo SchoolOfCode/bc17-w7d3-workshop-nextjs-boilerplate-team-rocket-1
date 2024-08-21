@@ -11,7 +11,6 @@ const initialState = {
     city:"",
     phoneNumber:"",
     email: ""
-
   },
   error: false,
 };
@@ -24,16 +23,23 @@ function rocketReducer(state, action) {
           ...state.data,
           [action.payload.fieldName]: action.payload.fieldValue,
         },
-      };
+        error: false
+      }
+      case "CHANGE_ERROR":
+        return {
+          data: {
+            ...state.data
+          },
+          error: action.payload
+        }
     default:
       return state;
   }
+  console.log(state)
 }
 
 export default function ContactForm() {
   const [state, dispatch] = useReducer(rocketReducer, initialState);
-
-  const [error, setError] = useState(false);
 
   function handleChange(event) {
     dispatch({
@@ -49,12 +55,17 @@ export default function ContactForm() {
     event.preventDefault(); // Prevent form default behaviour (posting to itself/refreshing the page)
 
     if (!state.data.firstName || !state.data.postcode ||!state.data.address || !state.data.city|| !state.data.phoneNumber || !state.data.email  ) {
-      setError(true);
-      return;
+      dispatch({
+        type: "CHANGE_ERROR",
+        payload: true
+      })
     }
 
-    if (error) {
-      setError(false);
+    if (state.error) {
+      dispatch({
+        type: "CHANGE_ERROR",
+        payload: false
+      })
     }
 
     console.log(
@@ -63,12 +74,8 @@ export default function ContactForm() {
       Address: ${state.data.address}
       City: ${state.data.city}
       phoneNumber: ${state.data.phoneNumber}
-      Email: ${state.data.email}`
-      
+      Email: ${state.data.email}`, 
     );
-    
-   
-    
     
   }
 
@@ -160,7 +167,7 @@ export default function ContactForm() {
         <button type="submit" className={styles.button}>
           Book!
         </button>
-        {error && <p>Fill in the form please!</p>}
+        {state.error && <p>Fill in the form please!</p>}
       </form>
     </div>
   );

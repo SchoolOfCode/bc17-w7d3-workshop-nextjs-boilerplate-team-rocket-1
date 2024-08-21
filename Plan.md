@@ -217,8 +217,8 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 
 - Add error to the initial state 
 
-  - First, get rid of the  error useState 
-  - Add another case , 'CHANGE_ERROR' as a string
+  - First, get rid of the  error useState ✅
+  - Add another case , 'CHANGE_ERROR' as a string ✅
       - 
 
 # Reducer extended tasks
