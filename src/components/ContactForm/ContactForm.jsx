@@ -118,6 +118,7 @@ export default function ContactForm() {
         </fieldset>
 
         <button type="submit">Book!</button>
+        {(firstName==='' || postcode==='' || address==='' || city==='' ||phoneNumber==='' || email==='' )&& <p>Fil in the form please!</p> }
       </form>
     </>
   );

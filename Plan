@@ -161,11 +161,14 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 - console.log submitted data via button: onSubmit ✅
   - call a submit handler function ✅
   - prevent the default behaviour ✅
-  - validation to check if feilds are empty
+
+
+- validation to check if feilds are empty
+  - conditional rendering: if any of the state variables, show error message
 - show error messege
 
 ## refactor
 
-- use style as prop in form component
+- use style as prop in form component 
 
-- split Form componant into differnt componants
+- split Form componant into differnt componants ✅
