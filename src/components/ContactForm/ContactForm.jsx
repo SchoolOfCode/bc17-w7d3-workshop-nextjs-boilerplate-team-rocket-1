@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-//import styles from "./ContactForm.module.css";
+import styles from "./ContactForm.module.css";
 
 export default function ContactForm() {
   const [firstName, setFirstName] = useState("");
@@ -10,7 +10,7 @@ export default function ContactForm() {
   const [city, setCity] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
-  const [error, setError] = useState(false)
+  const [error, setError] = useState(false);
 
   function handleChange(event) {
     if (event.target.name === "name") {
@@ -36,12 +36,20 @@ export default function ContactForm() {
   function handleSubmit(event) {
     event.preventDefault(); // Prevent form default behaviour (posting to itself/refreshing the page)
 
-    if (!firstName || !postcode || !address || !city || !phoneNumber || !email){
-      setError(true)
-      return
-    } if (error) {
-      setError(false)
-      return
+    if (
+      !firstName ||
+      !postcode ||
+      !address ||
+      !city ||
+      !phoneNumber ||
+      !email
+    ) {
+      setError(true);
+      return;
+    }
+
+    if (error) {
+      setError(false);
     }
 
     console.log(
@@ -64,6 +72,7 @@ export default function ContactForm() {
           <label>
             Name:
             <input
+              className={styles.inputBox}
               type="text"
               value={firstName}
               name="name"
@@ -74,6 +83,7 @@ export default function ContactForm() {
           <label>
             Postcode:
             <input
+              className={styles.inputBox}
               type="text"
               value={postcode}
               name="postcode"
@@ -84,6 +94,7 @@ export default function ContactForm() {
           <label>
             House/Flat Number and Street Number:
             <input
+              className={styles.inputBox}
               type="text"
               value={address}
               name="address"
@@ -94,6 +105,7 @@ export default function ContactForm() {
           <label>
             City:
             <input
+              className={styles.inputBox}
               type="text"
               value={city}
               name="city"
@@ -108,6 +120,7 @@ export default function ContactForm() {
           <label>
             Phone Number:
             <input
+              className={styles.inputBox}
               type="tel"
               value={phoneNumber}
               name="tel"
@@ -118,6 +131,7 @@ export default function ContactForm() {
           <label>
             Email Address:
             <input
+              className={styles.inputBox}
               type="email"
               value={email}
               name="email"
@@ -126,7 +140,8 @@ export default function ContactForm() {
           </label>
         </fieldset>
 
-        <button type="submit">Book!</button><p>Fill in the form please!</p>
+        <button type="submit">Book!</button>
+        {error && <p>Fill in the form please!</p>}
       </form>
     </>
   );
