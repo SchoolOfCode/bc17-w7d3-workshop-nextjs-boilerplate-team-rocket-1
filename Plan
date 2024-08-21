@@ -181,7 +181,7 @@ in your home page component, "/app/page.js", you could put the rest of the home 
   -the state ✅
   -handler function ✅
   -html ✅
- 
+
 - check! ✅
 
 - create state object that mimics what we have ✅
@@ -191,12 +191,12 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 
 - check! ✅
 
-- Remove old logic 
+- Remove old logic
   -remove fullName state ✅
   -remove setFullName state ✅
 - Replace with state.data.fullName ✅
 
-- check!  ✅
+- check! ✅
 
 - Code the dispatcher ✅
 
@@ -204,8 +204,6 @@ in your home page component, "/app/page.js", you could put the rest of the home 
   - Make the reducer able to do that action ✅
   - create new resonce object with spread ✅
 
-- check!
-
-
+- check! ✅
 
 # Reducer extended tasks
