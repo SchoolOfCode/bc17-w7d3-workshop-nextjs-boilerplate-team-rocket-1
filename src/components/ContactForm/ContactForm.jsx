@@ -63,7 +63,7 @@ export default function ContactForm() {
   }
 
   return (
-    <>
+    <div className={styles.wrapper}>
       <h1>Design Booking</h1>
       <form onSubmit={(event) => handleSubmit(event)}>
         <fieldset>
@@ -114,7 +114,7 @@ export default function ContactForm() {
           </label>
         </fieldset>
 
-        <fieldset>
+        <fieldset className={styles.bottomFieldset}>
           <legend>Contact Information</legend>
 
           <label>
@@ -140,9 +140,9 @@ export default function ContactForm() {
           </label>
         </fieldset>
 
-        <button type="submit">Book!</button>
+        <button type="submit" className={styles.button}>Book!</button>
         {error && <p>Fill in the form please!</p>}
       </form>
-    </>
+    </div>
   );
 }
