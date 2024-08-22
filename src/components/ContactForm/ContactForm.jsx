@@ -6,11 +6,11 @@ import styles from "./ContactForm.module.css";
 const initialState = {
   data: {
     firstName: "",
-    postcode:"",
-    address:"",
-    city:"",
-    phoneNumber:"",
-    email: ""
+    postcode: "",
+    address: "",
+    city: "",
+    phoneNumber: "",
+    email: "",
   },
   error: false,
 };
@@ -19,23 +19,21 @@ function rocketReducer(state, action) {
   switch (action.type) {
     case "CHANGE_FIELD":
       return {
+        ...state,
         data: {
           ...state.data,
           [action.payload.fieldName]: action.payload.fieldValue,
         },
-        error: false
-      }
-      case "CHANGE_ERROR":
-        return {
-          data: {
-            ...state.data
-          },
-          error: action.payload
-        }
+      };
+    case "CHANGE_ERROR":
+      return {
+        ...state,
+        error: action.payload,
+      };
     default:
       return state;
   }
-  console.log(state)
+  console.log(state);
 }
 
 export default function ContactForm() {
@@ -54,18 +52,25 @@ export default function ContactForm() {
   function handleSubmit(event) {
     event.preventDefault(); // Prevent form default behaviour (posting to itself/refreshing the page)
 
-    if (!state.data.firstName || !state.data.postcode ||!state.data.address || !state.data.city|| !state.data.phoneNumber || !state.data.email  ) {
+    if (
+      !state.data.firstName ||
+      !state.data.postcode ||
+      !state.data.address ||
+      !state.data.city ||
+      !state.data.phoneNumber ||
+      !state.data.email
+    ) {
       dispatch({
         type: "CHANGE_ERROR",
-        payload: true
-      })
+        payload: true,
+      });
     }
 
     if (state.error) {
       dispatch({
         type: "CHANGE_ERROR",
-        payload: false
-      })
+        payload: false,
+      });
     }
 
     console.log(
@@ -74,9 +79,8 @@ export default function ContactForm() {
       Address: ${state.data.address}
       City: ${state.data.city}
       phoneNumber: ${state.data.phoneNumber}
-      Email: ${state.data.email}`, 
+      Email: ${state.data.email}`
     );
-    
   }
 
   return (
@@ -129,39 +133,32 @@ export default function ContactForm() {
               onChange={(event) => handleChange(event)}
             />
           </label>
-
-
-
-
         </fieldset>
 
         <fieldset className={styles.bottomFieldset}>
-          
           <legend>Contact Information</legend>
 
           <label>
-              Phone Number:
-              <input
-                className={styles.inputBox}
-                type="tel"
-                value={state.data.phoneNumber}
-                name="phoneNumber"
-                onChange={(event) => handleChange(event)}
-              />
-            </label>
+            Phone Number:
+            <input
+              className={styles.inputBox}
+              type="tel"
+              value={state.data.phoneNumber}
+              name="phoneNumber"
+              onChange={(event) => handleChange(event)}
+            />
+          </label>
 
-            
           <label>
-              Email Address:
-              <input
-                className={styles.inputBox}
-                type="email"
-                value={state.data.email}
-                name="email"
-                onChange={(event) => handleChange(event)}
-              />
-            </label>
-
+            Email Address:
+            <input
+              className={styles.inputBox}
+              type="email"
+              value={state.data.email}
+              name="email"
+              onChange={(event) => handleChange(event)}
+            />
+          </label>
         </fieldset>
 
         <button type="submit" className={styles.button}>

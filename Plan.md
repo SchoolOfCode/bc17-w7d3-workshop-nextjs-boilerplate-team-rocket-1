@@ -215,10 +215,17 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 
 - check! ✅
 
-- Add error to the initial state 
+- Add error to the initial state
 
-  - First, get rid of the  error useState ✅
-  - Add another case , 'CHANGE_ERROR' as a string ✅
-      - 
+  - First, get rid of the error useState ✅
+  - Add another reducer action , 'CHANGE_ERROR' as a string ✅
+  - Set the error status in the various reducer actions ✅
 
 # Reducer extended tasks
+
+- Create a new state property named status
+- Add reducer actions possible reducer action values for this would be
+  - EDITING
+  - FORM_SUBMITTING
+  - FORM_SUCCESS
+  - ERROR
