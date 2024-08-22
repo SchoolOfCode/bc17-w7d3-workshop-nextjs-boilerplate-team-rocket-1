@@ -242,17 +242,27 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 
 # HACKATHON 
 
-## Install Playwright 
+## Install Playwright  ✅
  
 *Playwrite-guide*
 
-## Plan user stories
+- created a file inside test 
+- imported test from playwright/test
+
+## Plan user stories ✅
 
 
 
 ## Create tests
 
 *Playwrite-guide*
+
+# End-to-end test 
+- First, open mobile website 
+- Then scroll down to the review section 
+- Finally, click on 'England' to view the latest review from England.  
+
+
 
 ## Create second test
 
