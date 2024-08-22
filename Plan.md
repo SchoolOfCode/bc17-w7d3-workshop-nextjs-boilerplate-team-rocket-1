@@ -239,3 +239,22 @@ in your home page component, "/app/page.js", you could put the rest of the home 
     - form validation ✅
     - html message ✅
       -Change any mention of state.error ✅
+
+# HACKATHON 
+
+## Install Playwright 
+ 
+*Playwrite-guide*
+
+## Plan user stories
+
+
+
+## Create tests
+
+*Playwrite-guide*
+
+## Create second test
+
+
+# Unit test with Jest?
