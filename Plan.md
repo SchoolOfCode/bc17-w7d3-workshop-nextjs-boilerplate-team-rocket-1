@@ -225,13 +225,19 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 
 - Create a new state property named status ✅
 - Add reducer actions possible reducer action values for this would be
-  - EDITING
-  - FORM_SUBMITTING
-  - FORM_SUCCESS
-  - ERROR
-- Change any mention of state.error 
+  - EDITING ✅
+  - FORM_SUBMITTING ✅
+  - FORM_SUCCESS ✅
+  - ERROR ✅
+
 - Create the dispatches for the reducer actions 
+  - FORM_SUBMITTING 
+    - Add the timeout somewhere 
+  - FORM_SUCCESS 
+  - ERROR ✅
+    - form validation ✅
+    - html messege ✅
+    -Change any mention of state.error ✅
 
 
-- Add the timeout somewhere 
 

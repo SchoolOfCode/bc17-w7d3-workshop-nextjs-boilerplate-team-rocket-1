@@ -28,7 +28,7 @@ function rocketReducer(state, action) {
     case "CHANGE_ERROR":
       return {
         ...state,
-        error: action.payload,
+        status: "error",
       };
 
     case "FORM_SUBMITTING": return {
@@ -37,7 +37,8 @@ function rocketReducer(state, action) {
     };
 
     case "FORM_SUCCESS": return {
-      
+      ...state,
+      status: "Success"
     };
 
 
@@ -75,14 +76,13 @@ export default function ContactForm() {
     ) {
       dispatch({
         type: "CHANGE_ERROR",
-        payload: true,
       });
+      return
     }
 
-    if (state.error) {
+    else {
       dispatch({
-        type: "CHANGE_ERROR",
-        payload: false,
+        type: "FORM_SUBMITTING"
       });
     }
 
@@ -177,7 +177,7 @@ export default function ContactForm() {
         <button type="submit" className={styles.button}>
           Book!
         </button>
-        {state.error && <p>Fill in the form please!</p>}
+        {state.status === "error" && <p>Fill in the form please!</p>}
       </form>
     </div>
   );
