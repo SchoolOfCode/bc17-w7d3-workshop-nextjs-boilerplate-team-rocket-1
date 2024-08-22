@@ -12,7 +12,7 @@ const initialState = {
     phoneNumber: "",
     email: "",
   },
-  error: false,
+  status: "editing",
 };
 
 function rocketReducer(state, action) {
@@ -30,6 +30,19 @@ function rocketReducer(state, action) {
         ...state,
         error: action.payload,
       };
+
+    case "FORM_SUBMITTING": return {
+      ...state,
+      status: "Submitting"
+    };
+
+    case "FORM_SUCCESS": return {
+      
+    };
+
+
+
+
     default:
       return state;
   }
