@@ -16,7 +16,6 @@ const initialState = {
 };
 
 function rocketReducer(state, action) {
-  console.log("REDUCER ACTION" + action.type);
 
   switch (action.type) {
     case "CHANGE_FIELD":
@@ -29,21 +28,18 @@ function rocketReducer(state, action) {
       };
 
     case "CHANGE_ERROR":
-      console.log("REDUCER ERROR");
       return {
         ...state,
         status: "error",
       };
 
     case "FORM_SUBMITTING":
-      console.log("REDUCER SUBMITTING");
       return {
         ...state,
         status: "submitting",
       };
 
     case "FORM_SUCCESS":
-      console.log("REDUCER SUCCESS");
       return {
         ...state,
         status: "success",
@@ -82,34 +78,28 @@ export default function ContactForm() {
       dispatch({
         type: "CHANGE_ERROR",
       });
-      console.log("GOT HERE 1!!!");
-      console.log(state.status);
       return;
     }
 
-    console.log("GOT HERE 2!!!");
-
+   
     // If we are still in this function (so no error), then submit the form
     dispatch({
       type: "FORM_SUBMITTING",
     });
-    console.log("GOT HERE 3!!!");
-    console.log(state.status);
 
     setTimeout(() => {
       dispatch({ type: "FORM_SUCCESS" });
-      console.log("GOT HERE 4!!!");
-      console.log(state.status);
+      console.log(
+        `Name: ${state.data.firstName}
+        Postcode: ${state.data.postcode}
+        Address: ${state.data.address}
+        City: ${state.data.city}
+        phoneNumber: ${state.data.phoneNumber}
+        Email: ${state.data.email}`
+      );
     }, 3000);
 
-    console.log(
-      `Name: ${state.data.firstName}
-      Postcode: ${state.data.postcode}
-      Address: ${state.data.address}
-      City: ${state.data.city}
-      phoneNumber: ${state.data.phoneNumber}
-      Email: ${state.data.email}`
-    );
+
   }
 
   return (
@@ -191,10 +181,15 @@ export default function ContactForm() {
         </fieldset>
 
         <button type="submit" className={styles.button}>
-          Book!
+        {state.status==="submitting" ? "LIFTING OFF...." : "BOOK NOW"}
         </button>
-        {state.status === "error" && <p>Fill in the form please!</p>}
+
+        {state.status === "error" && <p className={styles.error}>Fill in the form please!</p>}
+        {state.status === "success" && <p>We've lifted off, well done!</p>}
+
       </form>
     </div>
   );
 }
+
+
