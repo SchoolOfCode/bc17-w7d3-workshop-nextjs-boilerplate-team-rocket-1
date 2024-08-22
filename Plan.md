@@ -83,7 +83,7 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 
 - import useeffect, usestate ✅
 
-- create componant Reviews() ✅
+- create component Reviews() ✅
 
 - write return for Reviews(): ✅
   render three buttons with : ✅
@@ -103,10 +103,10 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 - write if (selectedCountry) ✅
 - fetch from api✅
   - have the url in back ticks and insert the selected country as a variable ✅
-- parse json responce ✅
-- use responce to change reviewdata ✅
+- parse json response ✅
+- use response to change reviewdata ✅
 
-- dependcency thingy: [selectedCountry] ✅
+- dependency thingy: [selectedCountry] ✅
 
 # step 6
 
@@ -123,13 +123,13 @@ in your home page component, "/app/page.js", you could put the rest of the home 
   - p reviewer's name - reviewData.author ✅
   - location - reviewData.location ✅
 
-# step 7 change button componant
+# step 7 change button component
 
 # Hackathon 2
 
 ## link form
 
-- change phonenumber to page link ✅
+- change phone number to page link ✅
   - as "Book Consultation" ✅
   - to "/booking" ✅
 
@@ -163,15 +163,15 @@ in your home page component, "/app/page.js", you could put the rest of the home 
   - call a submit handler function ✅
   - prevent the default behaviour ✅
 
-- validation to check if feilds are empty
+- validation to check if fields are empty
   - conditional rendering: if any of the state variables, show error message
-- show error messege
+- show error message
 
 ## refactor
 
 - use style as prop in form component
 
-- split Form componant into differnt componants ✅
+- split Form component into different components ✅
 
 # Reducer initial refactoring task
 
@@ -202,7 +202,7 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 
   - Dispatch and action to the reducer ✅
   - Make the reducer able to do that action ✅
-  - create new resonce object with spread ✅
+  - create new reducer object with spread ✅
 
 - check! ✅
 
@@ -225,19 +225,17 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 
 - Create a new state property named status ✅
 - Add reducer actions possible reducer action values for this would be
+
   - EDITING ✅
   - FORM_SUBMITTING ✅
   - FORM_SUCCESS ✅
   - ERROR ✅
 
-- Create the dispatches for the reducer actions 
-  - FORM_SUBMITTING 
-    - Add the timeout somewhere 
-  - FORM_SUCCESS 
+- Create the dispatches for the reducer actions
+  - FORM_SUBMITTING
+    - Add the timeout somewhere
+  - FORM_SUCCESS
   - ERROR ✅
     - form validation ✅
-    - html messege ✅
-    -Change any mention of state.error ✅
-
-
-
+    - html message ✅
+      -Change any mention of state.error ✅
