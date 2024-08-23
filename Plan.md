@@ -240,11 +240,11 @@ in your home page component, "/app/page.js", you could put the rest of the home 
     - html message ✅
       -Change any mention of state.error ✅
 
-# HACKATHON 
+# HACKATHON
 
-## Install Playwright  ✅
- 
-*Playwrite-guide*
+## Install Playwright ✅
+
+_Playwrite-guide_
 
 - created a test file inside test folder✅
 - imported test from playwright/test✅
@@ -256,24 +256,23 @@ in your home page component, "/app/page.js", you could put the rest of the home 
 - import expect from playwright/test✅
 - add expect to be this page into test✅
 - check test passes✅
-
+- IMPORTANT: You will need to run the following command on all computers that didn't originally install/initialized playwright:
+  `npx playwright install`
 
 ## Plan user stories ✅
 
-
-
 ## Create tests
 
-*Playwrite-guide*
+_Playwrite-guide_
 
-# End-to-end test 
-- First, open mobile website 
-- Then scroll down to the review section 
-- Finally, click on 'England' to view the latest review from England.  
+# End-to-end tests
 
+## User Story 1: Regional Reviews
 
+- First, open mobile website
+- Then scroll down to the review section
+- Finally, click on 'England' to view the latest review from England.
 
 ## Create second test
-
 
 # Unit test with Jest?
