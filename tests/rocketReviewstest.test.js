@@ -8,8 +8,13 @@ test("team rocket test is the best", async ({ page }) => {
   // Check that we are on the correct website
   await expect(page).toHaveTitle(/Fireplace Palace/);
 
-  // Click on the "England" review button
-  const myButton = page.getByRole("button", { name: "England" });
-  await myButton.click();
+  const menuButton = page.getByRole("button", { name: '≡' })
+  await menuButton.click()
+  const founderLink = page.getByRole('link', { name: 'Founders' })
+  expect(founderLink).toBeVisible()
+  await founderLink.click()
+  
+  await expect(page).toHaveTitle(/Fireplace Palace/);
+  
   
 });
