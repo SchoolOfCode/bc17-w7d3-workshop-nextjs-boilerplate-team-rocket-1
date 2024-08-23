@@ -14,7 +14,7 @@ This workshop is all about end-to-end testing! Here's a glimpse of what you'll b
 
 ## 🎟️ TICKETS
 
-### 🎫 Ticket 2 - Installing Playwright
+<!-- ### 🎫 Ticket 2 - Installing Playwright
 
 First, use the [installation instructions](https://playwright.dev/docs/intro) to install Playwright within the project.
 
@@ -24,9 +24,9 @@ First, use the [installation instructions](https://playwright.dev/docs/intro) to
 - If it asks you whether to add a GitHub Actions workflow, choose no.
 - If it asks you whether to install Playwright browsers, choose yes.
 - If it creates some example tests for you (in the `tests` and `tests-examples` folder), feel free to read through them and have tools like ChatGPT explain what the code is doing (if you're curious) but then ultimately delete them so that you've only got an empty `tests` folder and are ready to start fresh.
-- It it asks whether to override the existing `playwright.config.js` file, choose no.
+- It it asks whether to override the existing `playwright.config.js` file, choose no. -->
 
-Then read through the [Writing Tests](https://playwright.dev/docs/writing-tests) page to get an overview of how tests are written in Playwright.
+<!-- Then read through the [Writing Tests](https://playwright.dev/docs/writing-tests) page to get an overview of how tests are written in Playwright.
 
 ### 🎫 Ticket 3 - Writing a basic test skeleton
 
@@ -34,28 +34,28 @@ At this stage you should have a `playwright.config.js` and an empty `tests` fold
 
 - Create a `todos.test.js` file within the `tests` folder.
   - Why: This creates a file within which you can put your tests. Ending the file with `test.js` lets Playwright know that this JavaScript file contains tests for it to run.
-- Inside the `todos.test.js` file, import `test` from `@playwright/test`
-  - Why: `test` is a function located within the Playwright package. It allows you to define test cases.
+- Inside the `todos.test.js` file, import `test` from `@playwright/test` -->
+  <!-- - Why: `test` is a function located within the Playwright package. It allows you to define test cases.
   - If you're stuck on how to import `test` from Playwright, look for examples online or in their documentation.
-- Call `test` to define a new test named `"practice test should pass"` that doesn't do anything yet.
+- Call `test` to define a new test named `"practice test should pass"` that doesn't do anything yet. -->
 
-  - Why: Calling `test()` with correct arguments registers a new test.
+  <!-- - Why: Calling `test()` with correct arguments registers a new test.
   - If you're stuck on how to use/call `test`, look for examples online or in the Playwright documentation.
   - After writing your test, use the Playwright documentation (https://playwright.dev/docs/running-tests might be a good starting point) to figure out how to run Playwright and see whether it detects and passes your new test.
     - Why: This lets you know if Playwright is detecting your test file and the test within it. By default, tests pass and only fail if something went wrong or didn't meet your expectations.
     - Playwright launches browsers and then automates the browser as per the logic in the test. By default, this can all happen without it being visible to you and instead you just see the outcome in the terminal. This is useful when running the tests in most automated contexts where there isn't a human/developer launching the tests. However, during development and writing test, if you prefer to see the browser (and a UI for Playwright itself), have a look at Playwright's [UI mode](https://playwright.dev/docs/test-ui-mode).
 
-🎯 Knowing how to read and write this sort of test skeleton is going to be a fundamental part of this exercise. Typically you'll have test files containing multiple tests, with each test building on top of this skeleton/structure.
+🎯 Knowing how to read and write this sort of test skeleton is going to be a fundamental part of this exercise. Typically you'll have test files containing multiple tests, with each test building on top of this skeleton/structure. -->
 
-### 🎫 Ticket 4 - Navigating to the frontend
+<!-- ### 🎫 Ticket 4 - Navigating to the frontend
 
 When writing end-to-end tests, being able to navigate to a particular URL is an important step. In order to test the application, you've got to navigate to it first.
 
-If you're not already running the Express app from earlier, start it up with `npm run dev`. Keep it running and make sure you can access the frontend in a browser using the URL logged in the terminal.
+If you're not already running the Express app from earlier, start it up with `npm run dev`. Keep it running and make sure you can access the frontend in a browser using the URL logged in the terminal. -->
 
-- Why: Playwright by default won't start up your web application for you. So you need to ensure your application is running first before running your tests. If you run the tests without starting up the web application first, the tests won't be able to access the frontend and the tests would fail.
+<!-- - Why: Playwright by default won't start up your web application for you. So you need to ensure your application is running first before running your tests. If you run the tests without starting up the web application first, the tests won't be able to access the frontend and the tests would fail.
 
-Create a new, separate terminal and if needed, `cd` to the root of this project. This second terminal can be used for Playwright commands and running the tests.
+Create a new, separate terminal and if needed, `cd` to the root of this project. This second terminal can be used for Playwright commands and running the tests. -->
 
 Within the existing test that you've started, use the [Playwright documentation](https://playwright.dev/docs/writing-tests#navigation) to programmatically navigate to the URL that the frontend is running on.
 

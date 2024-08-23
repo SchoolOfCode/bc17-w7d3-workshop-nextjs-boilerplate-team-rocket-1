@@ -246,8 +246,17 @@ in your home page component, "/app/page.js", you could put the rest of the home 
  
 *Playwrite-guide*
 
-- created a file inside test 
-- imported test from playwright/test
+- created a test file inside test folder✅
+- imported test from playwright/test✅
+- write basic test to initialise ✅
+- write script for `npx playwright test --ui`✅
+- `npm run dev` in other terminal✅
+- add page adress inside test✅
+- check it navigates✅
+- import expect from playwright/test✅
+- add expect to be this page into test✅
+- check test passes✅
+
 
 ## Plan user stories ✅
 
